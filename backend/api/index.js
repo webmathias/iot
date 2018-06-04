@@ -7,5 +7,5 @@ const mapApi = require('./map');
 router.use('/sensor', sensorApi);
 router.use('/slice', sliceApi);
 router.use('/map', mapApi);
-router.use('/docs', express.static('../doc'));
+
 module.exports = router;

@@ -23,7 +23,7 @@ app.use((req, res, next) => {
     }
     next()
 })
-
+app.use('/api/docs', express.static('./doc'));
 app.use('/', express.static('./public'));
 app.use('/api', require('./api/index'))
 app.listen(port, () => {
