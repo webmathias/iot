@@ -1,0 +1,15 @@
+This project is a experiment with IOT using:
+#Backend
+- Nodejs to api interface
+- mongodb to store data
+- WebSocket to send and receive data to sensors
+
+#Frontend
+- ReacJS + Redux
+- C3 to charts
+
+#Arduino
+- As example to connect receive information from server (Backend)
+
+#sensors-simulator
+- Simulator in reacNative (Android) to send sensor informations to server
