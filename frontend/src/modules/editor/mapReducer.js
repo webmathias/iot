@@ -8,13 +8,7 @@ for (let i = 0; i < mapSize; i++) {
 const DEFAULT_STATE = {
     selectedItem: null,
     map: map,
-    mapSensors: [
-        // {
-        //     sensor: id,
-        //     slice: id,
-        //     name: String
-        // }
-    ],
+    mapSensors: [],
     mapName: "",
     currentSelected: null,
     selectedProperty: null
@@ -23,6 +17,8 @@ const DEFAULT_STATE = {
 export default (state = DEFAULT_STATE, { type, payload }) => {
     switch (type) {
         case SELECT_ITEM:
+            console.log(state);
+            console.log(payload);
             return { ...state, selectedItem: payload }
             break;
         case ADD_ITEM_ON_MAP:
